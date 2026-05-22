@@ -1,10 +1,10 @@
 ﻿window.PORTFOLIO_PROJECTS = [
   {
-    name: "Regla Nueva",
-    description: "Primer proyecto destacado del portfolio. Sustituye esta descripcion por el objetivo real del repositorio cuando lo subas a GitHub.",
+    name: "Procrastinapp",
+    description: "Aplicacion enfocada en organizar tareas y combatir la procrastinacion. Primer proyecto indexado desde GitHub para mostrar trabajo real en el portfolio.",
     language: "JavaScript",
-    type: "Web",
-    githubUrl: "https://github.com/",
+    type: "Productividad",
+    githubUrl: "https://github.com/bcignasi/procrastinapp",
     demoUrl: ""
   },
   {
