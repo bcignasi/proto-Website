@@ -1,0 +1,94 @@
+﻿<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Desarrollador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Inicio">
+        <span class="brand-mark">IB</span>
+        <span>Portfolio</span>
+      </a>
+      <nav class="nav-links" aria-label="Navegacion principal">
+        <a href="#projects">Proyectos</a>
+        <a href="#about">Sobre mi</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <p class="eyebrow">Aprendiendo, construyendo y publicando</p>
+          <h1 id="hero-title">Portfolio de proyectos con JavaScript</h1>
+          <p class="hero-copy">
+            Una web personal para mostrar proyectos, practicar frontend y preparar una integracion real con GitHub.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Ver proyectos</a>
+            <a class="button secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="code-window">
+            <div class="window-bar"><span></span><span></span><span></span></div>
+            <pre><code>const portfolio = {
+  goal: "learn by building",
+  projects: "from GitHub",
+  status: "in progress"
+};</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Trabajo reciente</p>
+            <h2 id="projects-title">Proyectos</h2>
+          </div>
+          <div class="filters" aria-label="Filtrar proyectos">
+            <button class="filter-button active" type="button" data-filter="all">Todos</button>
+            <button class="filter-button" type="button" data-filter="JavaScript">JavaScript</button>
+            <button class="filter-button" type="button" data-filter="Web">Web</button>
+          </div>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="about-band" id="about" aria-labelledby="about-title">
+        <div>
+          <p class="eyebrow">Sobre mi</p>
+          <h2 id="about-title">Un portfolio que crece contigo</h2>
+        </div>
+        <p>
+          La primera version usa datos locales para aprender la base: HTML semantico, CSS responsive y JavaScript para renderizar contenido. Luego podemos cambiar el origen de datos a la API de GitHub sin rehacer la pagina.
+        </p>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">Contacto</p>
+        <h2 id="contact-title">Hablemos</h2>
+        <p>Actualiza estos enlaces con tus perfiles cuando tengas listo tu GitHub, LinkedIn o correo profesional.</p>
+        <div class="contact-links">
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:tu-email@example.com">Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Hecho con HTML, CSS y JavaScript.</span>
+    </footer>
+
+    <script src="src/projects.js"></script>
+    <script src="src/main.js"></script>
+  </body>
+</html>
